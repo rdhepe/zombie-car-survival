@@ -1,0 +1,39 @@
+## Installation Instructions
+
+### For Game Websites (itch.io, etc.):
+1. Upload the entire contents of this folder to your game hosting platform
+2. Set `index.html` as the main file
+3. Ensure all assets (CSS, JS, images) are uploaded with the correct folder structure
+
+### For Local Play:
+1. Extract all files to a folder on your computer
+2. Double-click `index.html` to open in your default browser
+3. Alternatively, right-click `index.html` → "Open with" → choose your browser
+
+### For Web Hosting:
+1. Upload all files to your web server
+2. Maintain the folder structure (assets folder, images, etc.)
+3. Access via your domain/subdomain
+
+### Technical Notes:
+- The game is built with React and Vite
+- All dependencies are bundled - no additional installation required
+- Background image (`zombie-car-background.jpg`) should be in the same folder as `index.html`
+- Assets folder contains minified CSS and JavaScript
+
+### Troubleshooting:
+- If the game doesn't load, check browser console for errors
+- Ensure all files were uploaded/extracted properly
+- Modern browsers required (Chrome 60+, Firefox 60+, Safari 12+, Edge 79+)
+
+### File Structure:
+```
+/
+├── index.html (main game file)
+├── zombie-car-background.jpg (background image)
+├── assets/
+│   ├── index-[hash].css (styles)
+│   └── index-[hash].js (game logic)
+├── GAME_README.txt (game description)
+└── INSTALL.txt (this file)
+```
